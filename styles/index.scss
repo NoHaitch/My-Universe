@@ -161,7 +161,8 @@ body {
 }
 
 .contact,
-.games {
+.games,
+.hobby {
   display: flex;
   position: Absolute;
   flex-direction: column;
@@ -190,4 +191,21 @@ body {
 
 span {
   color: rgb(235, 146, 146);
+}
+
+.bhome {
+  position: Absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  z-index: 30;
+  justify-content: center;
+  left: 5%;
+  top: 5%;
+  height: 56px;
+  width: 110px;
+  border-radius: 25px;
+  background-color: rgba(200, 212, 92, 0.158);
+  color: white;
+  text-align: center;
 }

@@ -236,7 +236,8 @@ body {
 }
 
 .contact,
-.games {
+.games,
+.hobby {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,5 +278,28 @@ body {
 
 span {
   color: #eb9292;
+}
+
+.bhome {
+  position: Absolute;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 30;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 5%;
+  top: 5%;
+  height: 56px;
+  width: 110px;
+  border-radius: 25px;
+  background-color: rgba(200, 212, 92, 0.158);
+  color: white;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

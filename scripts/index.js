@@ -80,7 +80,7 @@ function transition2(){
     var wrap = document.getElementById("wrapper");
     wrap.innerHTML +='<img class="bg" id="bg" src="./src/background.png">';
     wrap.style.background = "unset";
-    x = '<div class="content"><div class="row"><div class="cell" id="cell1" onclick="bait()"><img src="./src/Skills.png"><h1>Skills</h1></div><div class="cell" id="cell2" onclick="bait()"><img src="./src/Education.png"><h1>Education</h1></div><div class="cell" id="cell3" onclick="bait()"><img src="./src/Quotes.png"><h1>Quotes</h1></div></div><div class="row"><div class="cell" id="cell4" onclick="bait()"><img src="./src/Dream.png"><h1>Dreams</h1></div><div class="cell" id="cell5" onclick="move5()"><img src="./src/Contact.png"><h1>Contacts</h1></div><div class="cell" id="cell6" onclick="bait()"><img src="./src/Hobby.png"><h1>Hobbies</h1></div></div><div class="row"><div class="cell" id="cell7" onclick="bait()"><img src="./src/Music.png"><h1>Music</h1></div><div class="cell" id="cell8" onclick="bait()"><img src="./src/Other.png"><h1>Other Info</h1></div><div class="cell" id="cell9" onclick="move9()"><img src="./src/Games.png"><h1>Games</h1></div></div></div><div class="notif" id="notif"><video id="baitv" width="320" height="240" loop><source src="src/Jebaited Song.mp4" type="video/mp4"></video><h1>page not made!</h1><h2 onclick="closev()">X</h2></div>';
+    x = '<div class="content"><div class="row"><div class="cell" id="cell1" onclick="bait()"><img src="./src/Skills.png"><h1>Skills</h1></div><div class="cell" id="cell2" onclick="bait()"><img src="./src/Education.png"><h1>Education</h1></div><div class="cell" id="cell3" onclick="bait()"><img src="./src/Quotes.png"><h1>Quotes</h1></div></div><div class="row"><div class="cell" id="cell4" onclick="bait()"><img src="./src/Dream.png"><h1>Dreams</h1></div><div class="cell" id="cell5" onclick="move5()"><img src="./src/Contact.png"><h1>Contacts</h1></div><div class="cell" id="cell6" onclick="move6()"><img src="./src/Hobby.png"><h1>Hobbies</h1></div></div><div class="row"><div class="cell" id="cell7" onclick="bait()"><img src="./src/Music.png"><h1>Music</h1></div><div class="cell" id="cell8" onclick="bait()"><img src="./src/Other.png"><h1>Other Info</h1></div><div class="cell" id="cell9" onclick="move9()"><img src="./src/Games.png"><h1>Games</h1></div></div></div><div class="notif" id="notif"><video id="baitv" width="320" height="240" loop><source src="src/Jebaited Song.mp4" type="video/mp4"></video><h1>page not made!</h1><h2 onclick="closev()">X</h2></div><div class="bhome" id="bhome"><h1>HOME</h1></div>';
     wrap.innerHTML += x;
 }
 
@@ -112,6 +112,7 @@ function move5(){
         h = document.documentElement.clientHeight;
         w = document.documentElement.clientWidth;
         var tl = gsap.timeline();
+        tl.to("#bhome",{y:-h},"<");
         tl.to("#cell1",{x:-w},"<");  
         tl.to("#cell4",{x:-w},"<");  
         tl.to("#cell7",{x:-w},"<");  
@@ -139,7 +140,7 @@ function move5(){
                     var wrap = document.getElementById("wrapper");
                     wrap.innerHTML ='<img class="bg" id="bg" src="./src/background.png">';
                     wrap.style.background = "unset";
-                    x = '<div class="content"><div class="row"><div class="cell" id="cell1" onclick="bait()"><img src="./src/Skills.png"><h1>Skills</h1></div><div class="cell" id="cell2" onclick="bait()"><img src="./src/Education.png"><h1>Education</h1></div><div class="cell" id="cell3" onclick="bait()"><img src="./src/Quotes.png"><h1>Quotes</h1></div></div><div class="row"><div class="cell" id="cell4" onclick="bait()"><img src="./src/Dream.png"><h1>Dreams</h1></div><div class="cell" id="cell5" onclick="move5()"><img src="./src/Contact.png"><h1>Contacts</h1></div><div class="cell" id="cell6" onclick="bait()"><img src="./src/Hobby.png"><h1>Hobbies</h1></div></div><div class="row"><div class="cell" id="cell7" onclick="bait()"><img src="./src/Music.png"><h1>Music</h1></div><div class="cell" id="cell8" onclick="bait()"><img src="./src/Other.png"><h1>Other Info</h1></div><div class="cell" id="cell9" onclick="move9()"><img src="./src/Games.png"><h1>Games</h1></div></div></div><div class="notif" id="notif"><video id="baitv" width="320" height="240" loop><source src="src/Jebaited Song.mp4" type="video/mp4"></video><h1>page not made!</h1><h2 onclick="closev()">X</h2></div>';
+                    x = '<div class="content"><div class="row"><div class="cell" id="cell1" onclick="bait()"><img src="./src/Skills.png"><h1>Skills</h1></div><div class="cell" id="cell2" onclick="bait()"><img src="./src/Education.png"><h1>Education</h1></div><div class="cell" id="cell3" onclick="bait()"><img src="./src/Quotes.png"><h1>Quotes</h1></div></div><div class="row"><div class="cell" id="cell4" onclick="bait()"><img src="./src/Dream.png"><h1>Dreams</h1></div><div class="cell" id="cell5" onclick="move5()"><img src="./src/Contact.png"><h1>Contacts</h1></div><div class="cell" id="cell6" onclick="move6()"><img src="./src/Hobby.png"><h1>Hobbies</h1></div></div><div class="row"><div class="cell" id="cell7" onclick="bait()"><img src="./src/Music.png"><h1>Music</h1></div><div class="cell" id="cell8" onclick="bait()"><img src="./src/Other.png"><h1>Other Info</h1></div><div class="cell" id="cell9" onclick="move9()"><img src="./src/Games.png"><h1>Games</h1></div></div></div><div class="notif" id="notif"><video id="baitv" width="320" height="240" loop><source src="src/Jebaited Song.mp4" type="video/mp4"></video><h1>page not made!</h1><h2 onclick="closev()">X</h2></div><div class="bhome" id="bhome"><h1>HOME</h1></div>';
                     wrap.innerHTML += x;
                     gsap.from(".content",{y:h})
                     bmove5=true;
@@ -156,6 +157,7 @@ function move9(){
         h = document.documentElement.clientHeight;
         w = document.documentElement.clientWidth;
         var tl = gsap.timeline();
+        tl.to("#bhome",{y:-h},"<");
         tl.to("#cell1",{y:-h},"<");  
         tl.to("#cell2",{y:h},"<");  
         tl.to("#cell3",{y:-h},"<");  
@@ -167,11 +169,11 @@ function move9(){
         tl.to("#cell9",{y:-470,x:-342},"<0.5"); 
         setTimeout(() => {
             var wrap = document.getElementById("wrapper");
-                wrap.innerHTML += '<div id="games" class="games"><div class="isi"><h2>check it yourself :)</h2><h2>rarely play atm</h2></div><br><br><a href="https://steamcommunity.com/profiles/76561198155974986/"><h2>https://steamcommunity.com/profiles/76561198155974986/</h2></a><br><br><h2>type it you lazy bastards no coppying</h2>';
-                wrap.innerHTML += '<div class="back" id="back">Back</div>';
-                gsap.from(".back",{y:-h,duration:0.9});
-                gsap.from(".games",{y:h,duration:1.3});
-                var back = document.getElementById("back");           
+            wrap.innerHTML += '<div id="games" class="games"><div class="isi"><h2>check it yourself :)</h2><h2>rarely play atm</h2></div><br><br><a href="https://steamcommunity.com/profiles/76561198155974986/"><h2>https://steamcommunity.com/profiles/76561198155974986/</h2></a><br><br><h2>type it you lazy bastards no coppying</h2>';
+            wrap.innerHTML += '<div class="back" id="back">Back</div>';
+            gsap.from(".back",{y:-h,duration:0.9});
+            gsap.from(".games",{y:h,duration:1.3});
+            var back = document.getElementById("back");           
                 back.onclick = function(){
                     gsap.to(".back",{y:-h,duration:0.7});
                     gsap.to(".games",{y:h,duration:0.9});
@@ -181,7 +183,7 @@ function move9(){
                         document.getElementById("games").parentElement.removeChild(document.getElementById("games"));
                         var wrap = document.getElementById("wrapper");
                         wrap.innerHTML ='<img class="bg" id="bg" src="./src/background.png">';
-                        x = '<div class="content"><div class="row"><div class="cell" id="cell1" onclick="bait()"><img src="./src/Skills.png"><h1>Skills</h1></div><div class="cell" id="cell2" onclick="bait()"><img src="./src/Education.png"><h1>Education</h1></div><div class="cell" id="cell3" onclick="bait()"><img src="./src/Quotes.png"><h1>Quotes</h1></div></div><div class="row"><div class="cell" id="cell4" onclick="bait()"><img src="./src/Dream.png"><h1>Dreams</h1></div><div class="cell" id="cell5" onclick="move5()"><img src="./src/Contact.png"><h1>Contacts</h1></div><div class="cell" id="cell6" onclick="bait()"><img src="./src/Hobby.png"><h1>Hobbies</h1></div></div><div class="row"><div class="cell" id="cell7" onclick="bait()"><img src="./src/Music.png"><h1>Music</h1></div><div class="cell" id="cell8" onclick="bait()"><img src="./src/Other.png"><h1>Other Info</h1></div><div class="cell" id="cell9" onclick="move9()"><img src="./src/Games.png"><h1>Games</h1></div></div></div><div class="notif" id="notif"><video id="baitv" width="320" height="240" loop><source src="src/Jebaited Song.mp4" type="video/mp4"></video><h1>page not made!</h1><h2 onclick="closev()">X</h2></div>';
+                        x = '<div class="content"><div class="row"><div class="cell" id="cell1" onclick="bait()"><img src="./src/Skills.png"><h1>Skills</h1></div><div class="cell" id="cell2" onclick="bait()"><img src="./src/Education.png"><h1>Education</h1></div><div class="cell" id="cell3" onclick="bait()"><img src="./src/Quotes.png"><h1>Quotes</h1></div></div><div class="row"><div class="cell" id="cell4" onclick="bait()"><img src="./src/Dream.png"><h1>Dreams</h1></div><div class="cell" id="cell5" onclick="move5()"><img src="./src/Contact.png"><h1>Contacts</h1></div><div class="cell" id="cell6" onclick="move6()"><img src="./src/Hobby.png"><h1>Hobbies</h1></div></div><div class="row"><div class="cell" id="cell7" onclick="bait()"><img src="./src/Music.png"><h1>Music</h1></div><div class="cell" id="cell8" onclick="bait()"><img src="./src/Other.png"><h1>Other Info</h1></div><div class="cell" id="cell9" onclick="move9()"><img src="./src/Games.png"><h1>Games</h1></div></div></div><div class="notif" id="notif"><video id="baitv" width="320" height="240" loop><source src="src/Jebaited Song.mp4" type="video/mp4"></video><h1>page not made!</h1><h2 onclick="closev()">X</h2></div><div class="bhome" id="bhome"><h1>HOME</h1></div>';
                         wrap.innerHTML += x;
                         gsap.from(".content",{y:h})
                         bmove9=true;
@@ -191,3 +193,45 @@ function move9(){
     }
 }
 
+var bmove6 = true;
+function move6(){
+    if(bmove9==true){
+        bmove9 = false;
+        h = document.documentElement.clientHeight;
+        w = document.documentElement.clientWidth;
+        var tl = gsap.timeline();
+        tl.to("#bhome",{y:-h},"<");
+        tl.to("#cell1",{x:-w},"<");  
+        tl.to("#cell2",{y:-h},"<");  
+        tl.to("#cell3",{x:w},"<");  
+        tl.to("#cell4",{x:-w},"<");  
+        tl.to("#cell5",{y:-h},"<");  
+        tl.to("#cell9",{x:w},"<"); 
+        tl.to("#cell7",{x:-w},"<");  
+        tl.to("#cell8",{y:-h},"<");
+        tl.to("#cell6",{y:-235,x:-342},"<0.5"); 
+        setTimeout(() => {
+            var wrap = document.getElementById("wrapper");
+            wrap.innerHTML += '<div id="hobby" class="hobby"><div class="isi"><h2>Play <span>games</span> (as everyone does)</h2><br><h2><span>chess</span></h2><br><h2><span>programing</span></h2><br><h2>making <span>music</span> (if i have the free-est of time)</h2></div></div>';
+            wrap.innerHTML += '<div class="back" id="back">Back</div>';
+            gsap.from(".back",{y:-h,duration:0.9});
+            gsap.from(".hobby",{y:h,duration:1.3});
+            var back = document.getElementById("back");           
+                back.onclick = function(){
+                    gsap.to(".back",{y:-h,duration:0.7});
+                    gsap.to(".hobby",{y:h,duration:0.9});
+                    gsap.to("#cell6",{y:-h,duration:0.9,delay:0.1});
+                    setTimeout(() => {
+                        back.parentElement.removeChild(back);
+                        document.getElementById("hobby").parentElement.removeChild(document.getElementById("hobby"));
+                        var wrap = document.getElementById("wrapper");
+                        wrap.innerHTML ='<img class="bg" id="bg" src="./src/background.png">';
+                        x = '<div class="content"><div class="row"><div class="cell" id="cell1" onclick="bait()"><img src="./src/Skills.png"><h1>Skills</h1></div><div class="cell" id="cell2" onclick="bait()"><img src="./src/Education.png"><h1>Education</h1></div><div class="cell" id="cell3" onclick="bait()"><img src="./src/Quotes.png"><h1>Quotes</h1></div></div><div class="row"><div class="cell" id="cell4" onclick="bait()"><img src="./src/Dream.png"><h1>Dreams</h1></div><div class="cell" id="cell5" onclick="move5()"><img src="./src/Contact.png"><h1>Contacts</h1></div><div class="cell" id="cell6" onclick="move6()"><img src="./src/Hobby.png"><h1>Hobbies</h1></div></div><div class="row"><div class="cell" id="cell7" onclick="bait()"><img src="./src/Music.png"><h1>Music</h1></div><div class="cell" id="cell8" onclick="bait()"><img src="./src/Other.png"><h1>Other Info</h1></div><div class="cell" id="cell9" onclick="move9()"><img src="./src/Games.png"><h1>Games</h1></div></div></div><div class="notif" id="notif"><video id="baitv" width="320" height="240" loop><source src="src/Jebaited Song.mp4" type="video/mp4"></video><h1>page not made!</h1><h2 onclick="closev()">X</h2></div><div class="bhome" id="bhome"><h1>HOME</h1></div>';
+                        wrap.innerHTML += x;
+                        gsap.from(".content",{y:h})
+                        bmove9=true;
+                    }, 1400);
+                }
+        }, 2000);
+    }
+}
