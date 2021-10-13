@@ -64,10 +64,12 @@ function next(){
     setTimeout(() => {
         gsap.fromTo(".continue",{opacity:'0%'},{duration:2,opacity:"100%",repeat:-1,yoyo:true,delay:0.4})
     }, 1400);    
-
-    wrap.onclick = function(){
-        clean();
-    }
+    setTimeout(() => {
+        wrap.onclick = function(){
+            clean();
+        }
+    }, 700);  
+    
 }
 function clean(){
     document.getElementById("title").parentNode.removeChild(document.getElementById("title"));
